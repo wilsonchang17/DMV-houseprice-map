@@ -63,9 +63,6 @@ uvicorn main:app --reload
 ```
 
 - API runs at [http://localhost:8000](http://localhost:8000/)
-- Endpoints:
-    - `POST /query`: generate SQL from question
-    - `POST /ask`: query database and return readable answer
 
 ---
 
