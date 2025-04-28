@@ -6,6 +6,8 @@ Urban Transit and Real Estate: DMV Area Metro-Centric Price Map
 > 
 
 ---
+<img width="1512" alt="Group 2" src="https://github.com/user-attachments/assets/26de512e-3f2d-4834-a8a8-a93705f24399" />
+
 
 # 📄 Introduction
 
@@ -139,7 +141,6 @@ npm start
 npm run build
 ```
 
-- Deploy `/build` folder to Vercel, Netlify, S3, or any static hosting.
 
 ---
 
