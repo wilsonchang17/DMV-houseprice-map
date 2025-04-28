@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&display=swap');
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* 禁止整體滾動 */
+}
+/* Header */
+.map-header {
+  height: 80px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  z-index: 1000;
+  background: #B4B1A9;
+  margin: 0 auto;
+}
+.header-logo {
+  height: 50px; /* 根據需要調整 */
+  margin-right: 1rem;
+}
+.map-header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-family: "Geist", sans-serif;
+  color: white;
+}
+
+.map-header .home-link {
+  margin-left: auto;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  color: white;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.map-header .home-link:hover {
+  transform: scale(1.05);
+}
+
+/* Station Popup */
+.leaflet-popup-content .station-popup {
+  width: 320px;
+  max-width: 320px;
+  font-family: "Geist Mono", monospace;
+  font-size: 0.9em;
+  color: #213555;
+  line-height: 1.4;
+}
+
+.station-popup div {
+  margin-bottom: 0.4em;
+}
+
+.station-popup strong {
+  color: #4F709C;
+}
+
+.station-popup-card {
+  width: 400px;
+  font-family: "Geist Mono", monospace;
+  font-size: 0.9em;
+  color: #555;
+  line-height: 1.5;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  padding-bottom: 0.5em;
+}
+
+.popup-header {
+  background-color: #C96636;
+  padding: 0.5em 0.8em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  font-size: 1.5em;
+}
+
+.popup-title {
+  font-size: 1em;
+}
+
+.popup-zip {
+  font-size: 1em;
+  margin-left: auto;
+}
+.popup-close {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  margin-left: 1em;
+  margin-right: 0.1em;
+}
+.popup-body {
+  padding: 0.8em 1em;
+}
+
+.popup-section-label {
+  font-weight: bold;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  color: #7F4F56;
+  font-size: 1.3em;
+}
+
+.popup-metro-line {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-top: 0.3em;
+}
+
+.metro-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.leaflet-popup-content-wrapper {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+.leaflet-popup-tip {
+  display: none;
+}
+
+/* Zipcode Popup */
+.zipcode-popup-card {
+  width: 400px;
+  font-family: "Geist Mono", monospace;
+  font-size: 0.9em;
+  color: #555;
+  line-height: 1.5;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  padding-bottom: 0.5em;
+}
+
+.zipcode-popup-header {
+  background-color: #C96636;
+  padding: 0.5em 0.8em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  font-size: 1.5em;
+}
+
+.zipcode-popup-close {
+  font-size: 1.4em;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 0.1em;
+}
+
+.zipcode-popup-body {
+  padding: 0.8em 1em;
+  line-height: 1.4;
+}
+
+.zipcode-popup-section-label {
+  font-weight: bold;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  color: #7F4F56;
+  font-size: 1.3em;
+}
+
+.zipcode-popup-body div {
+  margin-bottom: 0.4em;
+}
+
+.zipcode-popup-body strong {
+  color: #618390;
+  font-size: 1.2em;
+}
+
+.mini-metro-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 5px;
+}
+.station-hr {
+  border: #B4B1A9 0.5px solid;
+}
+
+.prediction-table {
+  font-size: 0.9rem;
+}
+
+.prediction-table .pred-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 0;
+}
+
+.prediction-table .pred-label {
+  color: #555;
+}
+
+.prediction-table .pred-value {
+  font-weight: 600;
+}
+
+/* heat map legend */
+.info.legend {
+  background: white;
+  padding: 6px 8px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #555;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  font-family: "Geist Mono", monospace;
+}
+
+.info.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.7;
+}

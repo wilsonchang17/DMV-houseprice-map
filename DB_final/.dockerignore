@@ -1,0 +1,9 @@
+# Prevent huge/unnecessary layers
+node_modules
+frontend/build
+__pycache__/
+*.py[cod]
+.env
+.idea
+.vscode
+.DS_Store
