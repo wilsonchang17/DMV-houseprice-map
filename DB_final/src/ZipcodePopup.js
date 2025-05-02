@@ -11,7 +11,7 @@ export default function ZipcodePopup({ zipCode, stations, map }) {
   useEffect(() => {
     const zipNum = parseInt(zipCode, 10);
 
-    // 1) 撈最新一次的預測比例
+  
     const fetchPrediction = async () => {
       const { data, error } = await supabase
         .from('Predictions')
@@ -27,7 +27,7 @@ export default function ZipcodePopup({ zipCode, stations, map }) {
       }
     };
 
-    // 2) 撈最新一次的實際價格
+
     const fetchCurrentPrice = async () => {
       const { data, error } = await supabase
         .from('Locations_Prices')
@@ -47,7 +47,7 @@ export default function ZipcodePopup({ zipCode, stations, map }) {
     fetchCurrentPrice();
   }, [zipCode]);
 
-  // 正確算法：把 predictions[key] 當作百分比，除以 100 再套用
+ 
   const calcPredPrice = (key) => {
     if (currentPrice != null && predictions?.[key] != null) {
       const rate = Number(predictions[key]) / 100; 
@@ -56,7 +56,7 @@ export default function ZipcodePopup({ zipCode, stations, map }) {
     return null;
   };
 
-  // 格式化金額
+  
   const fmtPrice = (v) =>
     v != null ? `$${v.toLocaleString(undefined, { maximumFractionDigits: 0 })}` : '—';
 
@@ -73,7 +73,7 @@ export default function ZipcodePopup({ zipCode, stations, map }) {
         <div className="zipcode-popup-section-label">Price</div>
         <ZipcodePopupChart zip={zipCode} />
 
-        {/* 加入預測表格 */}
+      
         <div className="zipcode-popup-section-label">Predictions</div>
         <div className="prediction-table">
           <div className="pred-row">

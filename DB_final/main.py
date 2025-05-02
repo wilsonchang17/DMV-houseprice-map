@@ -136,4 +136,3 @@ async def chat_endpoint(request_body: QuestionRequest):
 # 3. Ensure .env file with credentials is in the same directory.
 # 4. Ensure requirements.txt is present and dependencies installed in venv.
 # 5. Run: uvicorn main_simple:app --reload --port 8000
-#    (Replace main_simple with main if you overwrote main.py)

@@ -19,7 +19,7 @@ class SupabaseConnector:
     def test_connection(self):
         if self.db is None:
             raise Exception("Database is not connected.")
-        print("✅ 成功連線 Supabase！以下是資料表清單：")
+        print("✅ Supabase connection successful!")
         print(self.db.get_usable_table_names())
 
 class LLMChatBot:
