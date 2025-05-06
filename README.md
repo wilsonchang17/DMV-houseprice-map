@@ -166,7 +166,7 @@ npm run build
 # 👤 Author
 
 - **Wilson (Chen-Wei Chang, wilsonchang@vt.edu) [@wilsonchang17](https://github.com/wilsonchang17)** 
-- **Sophia (Yu-Chieh Cheng, yj24@vt.edu)**
+- **Sophia (Yu-Chieh Cheng, yj24@vt.edu) [@becoollll](https://github.com/becoollll)**
 - **Eyan (Yun-En Tsai, yunen@vt.edu) [@somebody1997](https://github.com/somebody1997)**
 
 Virginia Tech
