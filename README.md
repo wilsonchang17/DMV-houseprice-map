@@ -1,6 +1,6 @@
 # Full-Stack Housing Price Map and Chatbot System
 
-Urban Transit and Real Estate: DMV Area Metro-Centric Price Map
+## [RailEstate: An Interactive System for Metro Linked Property Trends (Accepted by ACM SIGSPATIAL 2025)](https://drive.google.com/file/d/1ujuQyJPZ4Ue6OdzaY93Ta3etgJ3aCEAa/view?usp=sharing)
 
 > A full-stack project integrating a React frontend and a FastAPI backend with Supabase PostgreSQL database and a LangChain-powered chatbot.
 > 
