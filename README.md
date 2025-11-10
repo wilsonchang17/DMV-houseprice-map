@@ -8,6 +8,7 @@
 ---
 <img width="1512" alt="Group 2" src="https://github.com/user-attachments/assets/26de512e-3f2d-4834-a8a8-a93705f24399" />
 
+![Poster](poster.png)
 
 # 📄 Introduction
 
